@@ -307,7 +307,7 @@
     var bodyElement = document.querySelector('body');
     var footerElement = document.querySelector('.footer');
 
-    if (footerElement) {
+    if (footerElement && !bodyElement.classList.contains('page')) {
       var setPadding = function setPadding() {
         bodyElement.style.paddingBottom = "".concat(footerElement.offsetHeight, "px");
       };
