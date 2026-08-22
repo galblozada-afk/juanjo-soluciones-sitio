@@ -898,3 +898,48 @@
     font-size: 16px;
   }
 }
+
+/* Homepage slider controls: keep them inside the visible hero on desktop. */
+@media only screen and (min-width: 1200px) {
+  .page:has(.main-slider) .main-slide__link-wrapper {
+    position: fixed;
+    left: calc((100vw - 1140px) / 2 + 60px);
+    bottom: 28px;
+    z-index: 30;
+  }
+
+  .page:has(.main-slider) .main-slide__counter-wrapper {
+    position: fixed;
+    right: calc((100vw - 1140px) / 2 + 60px);
+    bottom: 8px;
+    z-index: 30;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-slider__footer {
+    bottom: 24px;
+  }
+
+  .main-slider__footer-inner {
+    align-items: center;
+  }
+
+  .main-slider__socials {
+    column-gap: 18px;
+  }
+
+  .main-slider__social-link {
+    margin-right: 0;
+  }
+
+  .main-slider__locales {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .main-slider__locale {
+    margin-left: 0;
+  }
+}
