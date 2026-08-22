@@ -337,6 +337,29 @@
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header__container {
+    padding-top: 24px;
+  }
+
+  .header__wrapper {
+    margin-bottom: 12px;
+  }
+
+  .header__logo-img {
+    height: 48px;
+    width: auto;
+  }
+
+  .contact-block__map {
+    height: 320px;
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+
   .article-listing-item__content {
     padding: 20px;
   }
